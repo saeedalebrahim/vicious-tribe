@@ -1,16 +1,16 @@
-$(document).ready(function (){
+jQuery(document).ready(function (){
                
-    var open_btn = $('.menu_btn');
+    var open_btn = jQuery('.menu_btn');
     // var close_btn = $('.close_btn');
-    var close_btn = $('.clossse');
+    var close_btn = jQuery('.clossse');
 
-    var navigation = $('.navigation')
-    var panels = $('.panel');
-    var links = $('.litem');
-    var lines = $('.line');
-    var data_content = $('.data__content');
-    var data_sub = $('.data__sub');
-    var footer = $('.footer');
+    var navigation = jQuery('.navigation')
+    var panels = jQuery('.panel');
+    var links = jQuery('.litem');
+    var lines = jQuery('.line');
+    var data_content = jQuery('.data__content');
+    var data_sub = jQuery('.data__sub');
+    var footer = jQuery('.footer');
     
     var tl = new TimelineLite({paused:true});
     
@@ -24,12 +24,12 @@ $(document).ready(function (){
     
     
     
-    function openBtn(e){
-        e.preventDefault();
-        navigation.removeClass("menu-closed");
-        navigation.addClass("menu-open");
-        tl.play();
-    }
+    // function openBtn(e){
+    //     e.preventDefault();
+    //     navigation.removeClass("menu-closed");
+    //     navigation.addClass("menu-open");
+    //     tl.play();
+    // }
     
     open_btn.on('click', function (e){
         e.preventDefault();

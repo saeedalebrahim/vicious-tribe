@@ -266,13 +266,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  justify-content: center;
+
+  width: 100vw;
   height: 100%;
   z-index: 1000;
 }
 
 .rarity div {
-  margin-left: 30%;
+  margin-left: 33%;
+  margin-right: 33%;
+  /* margin-left: auto !important;
+  margin-right: auto !important; */
 }
 @media (max-width:700px) {
   .rarity div {
@@ -486,7 +491,6 @@ body {
 
 @media (max-width:640px) {
   .box #content {
-
     height: 100%;
   }
 
@@ -926,6 +930,17 @@ li {
 }
 
 
+/* road map */
+
+#headlines{
+  margin-top: 250px;
+
+}
+
+#txt1{
+  margin-top: 250px;
+  padding-top: 250px;
+}
 
 
 

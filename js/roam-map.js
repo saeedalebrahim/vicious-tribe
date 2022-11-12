@@ -4,7 +4,7 @@ window.onload=()=>{
       width: '100%',
       height: gsap.getProperty('#app', 'height'), // apply the height of the image stack
       onComplete:()=>{
-        gsap.set('#app, #imgGroup', {opacity:1, position:'fixed', width:'100%', height:'100%', top:0, left:0, perspective:300}) 
+        gsap.set('#app, #imgGroup', {opacity:1, position:'fixed', width:'100%', height:'100%', top:0, left:0, perspective:200}) 
         gsap.set('#app img', {
           position: 'absolute',
           attr:{ id:(i,t,a)=>{ //use GSAP's built-in loop to setup each image
@@ -31,7 +31,7 @@ window.onload=()=>{
         .to('.imgBox img', {duration:0.1, opacity:0, stagger:-0.3, ease:'expo.inOut'}, 1.2)      
         .to('.imgBox', {duration:0, pointerEvents:'none', stagger:-0.3}, 1.27)
         .add('end')
-        .fromTo('#txt2', {scale:0.1, transformOrigin:'50%'},{scale:0.6, ease:'power3'}, 'end-=0.2')
+        .fromTo('#txt2', {scale:0, transformOrigin:'50%'},{scale:0.6, ease:'power3'}, 'end-=0.2')
         .from('#txt2 path', {duration:0.4, drawSVG:0, ease:'sine.inOut', stagger:0.15}, 'end-=0.2')      
               
         // intro animation
@@ -40,6 +40,8 @@ window.onload=()=>{
       }  
   
     })  
+
+    
     
     function initImg(i,t){
       const box = document.createElement('div') // make a container div
@@ -75,26 +77,26 @@ window.onload=()=>{
       t.onclick =()=> showDetail(t)
     }  
     
-    function showDetail(t){
-      gsap.timeline()
-          .set('#detailTxt', {textContent:t.alt}, 0)
-          .set('#detailImg', {background:'url('+t.src+') center no-repeat'}, 0)
-          .fromTo('#detail', {top:'100%'}, {top:0, ease:'expo.inOut'}, 0)
-          .fromTo('#detailImg', {y:'100%'}, {y:'0%', ease:'expo', duration:0.7}, 0.2)
-          .fromTo('#detailTxt', {opacity:0}, {opacity:1, ease:'power2.inOut'}, 0.4)
-          .to('#cursorCircle', {duration:0.2, opacity:0}, 0.2)
-          .to('#cursorClose', {duration:0.2, opacity:1}, 0.4)
-    }
+    // function showDetail(t){
+    //   gsap.timeline()
+    //       .set('#detailTxt', {textContent:t.alt}, 0)
+    //       .set('#detailImg', {background:'url('+t.src+') center no-repeat'}, 0)
+    //       .fromTo('#detail', {top:'100%'}, {top:0, ease:'expo.inOut'}, 0)
+    //       .fromTo('#detailImg', {y:'100%'}, {y:'0%', ease:'expo', duration:0.7}, 0.2)
+    //       .fromTo('#detailTxt', {opacity:0}, {opacity:1, ease:'power2.inOut'}, 0.4)
+    //       .to('#cursorCircle', {duration:0.2, opacity:0}, 0.2)
+    //       .to('#cursorClose', {duration:0.2, opacity:1}, 0.4)
+    // }
     
-    function closeDetail(){
-      gsap.timeline()
-          .to('#detailTxt', {duration:0.3, opacity:0}, 0)    
-          .to('#detailImg', {duration:0.3, y:'-100%', ease:'power1.in'}, 0)
-          .to('#detail', {duration:0.3, top:'-100%', ease:'expo.in'}, 0.1)
-          .to('#cursorClose', {duration:0.1, opacity:0}, 0)
-          .to('#cursorCircle', {duration:0.2, opacity:1}, 0.1)
-    }
-    document.getElementById('detail').onclick = closeDetail;
+    // function closeDetail(){
+    //   gsap.timeline()
+    //       .to('#detailTxt', {duration:0.3, opacity:0}, 0)    
+    //       .to('#detailImg', {duration:0.3, y:'-100%', ease:'power1.in'}, 0)
+    //       .to('#detail', {duration:0.3, top:'-100%', ease:'expo.in'}, 0.1)
+    //       .to('#cursorClose', {duration:0.1, opacity:0}, 0)
+    //       .to('#cursorCircle', {duration:0.2, opacity:1}, 0.1)
+    // }
+    // document.getElementById('detail').onclick = closeDetail;
     
     if (ScrollTrigger.isTouch==1) { // on mobile, hide mouse follower + remove the x/y positioning from the images
       gsap.set('#cursor', {opacity:0}) 
