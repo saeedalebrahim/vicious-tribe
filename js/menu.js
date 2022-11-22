@@ -5,6 +5,7 @@ jQuery(document).ready(function (){
     var close_btn = jQuery('.clossse');
 
     var navigation = jQuery('.navigation')
+    var header = jQuery('.header');
     var panels = jQuery('.panel');
     var links = jQuery('.litem');
     var lines = jQuery('.line');
@@ -40,10 +41,10 @@ jQuery(document).ready(function (){
     
     close_btn.on('click', function (e){
         e.preventDefault();
-        tl.reverse();
         navigation.removeClass("menu-open");
         navigation.addClass("menu-closed");
-
+        tl.reverse();
+      
     });
 
  });
