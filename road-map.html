@@ -5,9 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tribe Rarity</title>
+      <!-- local bootstrap -->
+      <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
+    
+  
+  <div class="header">
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img id="logo-head" src="assets/images/Logo.png"style="margin-left: 20px;" width="50px" alt=""
+        /></a>
+    <div class="menu_btn  strong-tilt-move-shake" role="button"><a href="#" title="open menu">menu</a></div>
+        <div class="row me-5">
+          <a class="nav-link text-white strong-tilt-move-shake" href="#">Mint</a>
+        </div>
+      </div>
+    </nav>
+    
+  </div>
+      
+  <nav class="navigation" role="navigation">
+    <!-- <h2>main navigation</h2> -->
+    <div class="panel panel--left">
+      <div class="top">
+       <a href="#" title="Close" class="strong-tilt-move-shake" style="color: white;"><span class="litem clossse strong-tilt-move-shake" style="font-size: 28px;">Close</span></a>
+      </div>
+        <ul class="menu">
+            <li><a href="index.html" title="Intro"><span class="litem strong-tilt-move-shake">Intro</span></a>
+                <i class="line"></i>
+            </li>
+            <li><a href="rarity.html" title="Rarity"><span class="litem strong-tilt-move-shake">Rarity</span></a>
+              
+                <i class="line"></i>
+            </li>
+            <li><a href="tomb.html" title="Tomb"><span class="litem strong-tilt-move-shake">Tomb</span></a>
+                
+                <i class="line"></i>
+            </li>
+            <li><a href="road-map.html" title="Road"><span class="litem strong-tilt-move-shake">Road</span></a>
+                <i class="line"></i>
+            </li>
+            <li><a href="team.html" title="Tribe"><span class="litem strong-tilt-move-shake">Tribe</span></a>
+                <i class="line"></i>
+            </li>
+            <li><a href="#" title="Close"><span class="litem clossse strong-tilt-move-shake">Close</span></a>
+              <i class="line"></i>
+          </li>
+        </ul>
+        <footer class="footer">
+            <span class="footer__gredits">developed by <a href="#" title="">CODINITY</a></span>
+            <span class="footer__social"><a href="#" title="facebook">facebook</a> - <a href="#" title="instagram">instagram</a></span>
+        </footer>
+    </div>
+    <div class="panel panel--right">
+        <!-- <div class="close_btn"><a href="#">close</a></div> -->
+        <div class="data">
+            <div class="data__content"><img src="assets/images/Logo.png"/></div>
+            <div class="data__sub">"Tribe"</div>
+        </div>
+    </div>	
+</nav>
+  
     <div id="scrollDist"></div>
 
     <div id="app">
@@ -155,6 +217,7 @@
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
 
+    <script src="js/menu.js"></script>
     <script src="js/roam-map.js"></script>
   </body>
 </html>
