@@ -746,7 +746,7 @@ li {
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -109px;
+  margin-left: -150px;
   transform: scale(1);
   opacity: 1;
   transition: transform 0.4s, opacity 0.2s;
