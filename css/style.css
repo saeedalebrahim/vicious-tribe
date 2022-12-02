@@ -141,7 +141,7 @@ a{
 
 .header {
   z-index: 99;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100vw;
 }
@@ -461,9 +461,10 @@ a{
   -webkit-perspective: 5000px;
   perspective: 5000px;
   transform: translate(-50%, -50%) rotateY(20deg);
-  border: 1px solid #bf6430;
+  /* border: 1px solid #bf6430; */
   box-shadow: 1px 20px 40px 5px #bf6430;
-  background: #bf6430;
+  /* background: #bf6430; */
+  scroll-behavior: smooth;
 }
 
 .box #container ::-webkit-scrollbar {
@@ -478,8 +479,10 @@ a{
   /* top: 0%; left: 50%; transform: translate(-50%, 0);
     margin: 2em 0;
       padding: 4em; */
-  box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+  /* box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset; */
   background: #fffef0;
+  scroll-behavior: smooth;
+
   /* v2.1 : borders effect with SVG : try to play with scale to change them */
   /* filter: url(#wavy2); */
   /* v2.2 : Noise added for a vellum paper effect */
@@ -508,6 +511,7 @@ a{
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
   overflow-y: scroll;
+  scroll-behavior: smooth;
   height: 100%;
 }
 
