@@ -41,9 +41,18 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- <div class="loader">
+    <div class="loader">
       <img src="assets/images/Logo.png" alt="loader" class="logo-loader" />
-    </div> -->
+      <ul class="pre-loader">
+        <li>L</li>
+        <li>O</li>
+        <li>A</li>
+        <li>D</li>
+        <li>I</li>
+        <li>N</li>
+        <li>G</li>
+      </ul>
+    </div>
     <div class="header">
       <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container-fluid">
@@ -187,6 +196,15 @@
       AOS.init();
     </script>
     <script src="js/menu.js"></script>
+    <script>
+    jQuery(document).ready(function () {
+      setTimeout(()=>{
+        jQuery.noConflict()(function ($) {
+    $(".loader").fadeOut(1000);
+  });
+      },  3000);
+    });
+    </script>
 
     <!-- my js -->
     <!-- <script src="js/rarity.js"></script> -->
