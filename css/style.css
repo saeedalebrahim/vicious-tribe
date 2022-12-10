@@ -370,7 +370,7 @@ ul.pre-loader li:nth-child(7) {
 
   width: 100vw;
   height: 100%;
-  z-index: 1000;
+  z-index: 9;
 }
 
 .rarity div {
@@ -440,7 +440,7 @@ ul.pre-loader li:nth-child(7) {
   left: 0;
   background-size: cover;
   background-position: center;
-  z-index: 10;
+  z-index: 6;
 }
 
 #mouth {
@@ -452,7 +452,7 @@ ul.pre-loader li:nth-child(7) {
   left: 0;
   background-size: cover;
   background-position: center;
-  z-index: 10;
+  z-index: 6;
 }
 
 #nose {
@@ -464,7 +464,7 @@ ul.pre-loader li:nth-child(7) {
   left: 0;
   background-size: cover;
   background-position: center;
-  z-index: 10;
+  z-index: 6;
 }
 
 #accessory {
@@ -476,7 +476,7 @@ ul.pre-loader li:nth-child(7) {
   left: 0;
   background-size: cover;
   background-position: center;
-  z-index: 10;
+  z-index: 6;
 }
 
 .span-btn {
