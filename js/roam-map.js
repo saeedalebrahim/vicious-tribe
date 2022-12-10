@@ -25,7 +25,7 @@ window.onload=()=>{
         .fromTo('#txt1', {scale:0.6, transformOrigin:'50%'}, {scale:2, ease:'power1.in'}, 0)
         .to('#txt1 path', {duration:0.3, drawSVG:0, stagger:0.05, ease:'power1.in', opacity:0,}, 0)
         .fromTo('.imgBox', {z:-7000}, {z:350, stagger:-0.3, ease:'none'}, 0.3)
-        .fromTo('.imgBox img', {scale:3}, {scale:0.5, stagger:-0.3, ease:'none'}, 0.3)      
+        .fromTo('.imgBox img', {scale:4.5}, {scale:0., stagger:-0.3, ease:'none'}, 0.3)      
         .to('.imgBox', {duration:0, pointerEvents:'auto', stagger:-0.3}, 0.5)
         .from('.imgBox img', {duration:0.3, opacity:0, stagger:-0.3, ease:'power1.inOut'}, 0.3)
         .to('.imgBox img', {duration:0.1, opacity:0, stagger:-0.3, ease:'expo.inOut'}, 1.2)      
