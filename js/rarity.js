@@ -23,17 +23,17 @@ function changeBody() {
     oldBody = number;
     var image;
     if (number == 0) {
-      image = "../assets/rarity-assets/body/sheldon.png";
+      image = "assets/rarity-assets/body/sheldon.png";
     } else if (number == 1) {
-      image = "../assets/rarity-assets/body/cyber.png";
+      image = "assets/rarity-assets/body/cyber.png";
     } else if (number == 2) {
-      image = "../assets/rarity-assets/body/demarcus.png";
+      image = "assets/rarity-assets/body/demarcus.png";
     } else if (number == 3) {
-      image = "../assets/rarity-assets/body/mercile.png";
+      image = "assets/rarity-assets/body/mercile.png";
     } else if (number == 4) {
-      image = "../assets/rarity-assets/body/ngan.png";
+      image = "assets/rarity-assets/body/ngan.png";
     } else {
-      image = "../assets/rarity-assets/body/base.png";
+      image = "assets/rarity-assets/body/base.png";
     }
     jQuery.noConflict()(function ($) {
     $("#body").css("background-image", `url(${image})`);
@@ -48,11 +48,11 @@ function changeBody() {
     oldHead = number;
     var image;
     if (number == 0) {
-      image = "../assets/rarity-assets/head/akino.png";
+      image = "assets/rarity-assets/head/akino.png";
     } else if (number == 1) {
-      image = "../assets/rarity-assets/head/nibiru.png";
+      image = "assets/rarity-assets/head/nibiru.png";
     } else {
-      image = "../assets/rarity-assets/head/base.png";
+      image = "assets/rarity-assets/head/base.png";
     }
     jQuery.noConflict()(function ($) {
 
@@ -69,11 +69,11 @@ function changeBody() {
     oldEye = number;
     var image;
     if (number == 0) {
-      image = "../assets/rarity-assets/eye/akufa.png";
+      image = "assets/rarity-assets/eye/akufa.png";
     } else if (number == 1) {
-      image = "../assets/rarity-assets/eye/base.png";
+      image = "assets/rarity-assets/eye/base.png";
     } else {
-      image = "../assets/rarity-assets/eye/hoven.png";
+      image = "assets/rarity-assets/eye/hoven.png";
     }
     jQuery.noConflict()(function ($) {
 
@@ -90,11 +90,11 @@ function changeBody() {
     oldNose = number;
     var image;
     if (number == 0) {
-      image = "../assets/rarity-assets/nose/2.png";
+      image = "assets/rarity-assets/nose/2.png";
     } else if (number == 1) {
-      image = "../assets/rarity-assets/nose/base.png";
+      image = "assets/rarity-assets/nose/base.png";
     } else {
-      image = "../assets/rarity-assets/nose/voldemort.png";
+      image = "assets/rarity-assets/nose/voldemort.png";
     }
     jQuery.noConflict()(function ($) {
 
@@ -111,11 +111,11 @@ function changeBody() {
     oldMouth = number;
     var image;
     if (number == 0) {
-      image = "../assets/rarity-assets/mouth/cinko.png";
+      image = "assets/rarity-assets/mouth/cinko.png";
     } else if (number == 1) {
-      image = "../assets/rarity-assets/mouth/base.png";
+      image = "assets/rarity-assets/mouth/base.png";
     } else {
-      image = "../assets/rarity-assets/mouth/shaka.png";
+      image = "assets/rarity-assets/mouth/shaka.png";
     }
     jQuery.noConflict()(function ($) {
 
@@ -132,11 +132,11 @@ function changeBody() {
     oldAccess = number;
     var image;
     if (number == 0) {
-      image = "../assets/rarity-assets/accessory/earing.png";
+      image = "assets/rarity-assets/accessory/earing.png";
     } else if (number == 1) {
-      image = "../assets/rarity-assets/accessory/glass.png";
+      image = "assets/rarity-assets/accessory/glass.png";
     } else {
-      image = "../assets/rarity-assets/accessory/neckless.png";
+      image = "assets/rarity-assets/accessory/neckless.png";
     }
     jQuery.noConflict()(function ($) {
 

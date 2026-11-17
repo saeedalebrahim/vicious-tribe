@@ -117,24 +117,23 @@
       requestAnimationFrame(function() {
         syncPanelContent(tops, bottoms, scrollTop, containerHeight, panelHeight);
       });
-      console.log("hey");
       jQuery.noConflict()(function ($) {
         if (counting==1) {
-        $("#ch-sc").attr("src","../../assets/tomb/1.png");
+        $("#ch-sc").attr("src","assets/tomb/1.PNG");
         }else if (counting == 2) {
-          $("#ch-sc").attr("src","../../assets/tomb/2.png");
+          $("#ch-sc").attr("src","assets/tomb/2.PNG");
         }else if (counting == 3) {
-          $("#ch-sc").attr("src","../../assets/tomb/3.png");
+          $("#ch-sc").attr("src","assets/tomb/3.PNG");
         }else if (counting == 4) {
-          $("#ch-sc").attr("src","../../assets/tomb/4.png");
+          $("#ch-sc").attr("src","assets/tomb/4.PNG");
         }else if (counting == 5) {
-          $("#ch-sc").attr("src","../../assets/tomb/5.png");
+          $("#ch-sc").attr("src","assets/tomb/5.PNG");
         }else if (counting == 6) {
-          $("#ch-sc").attr("src","../../assets/tomb/6.png");
+          $("#ch-sc").attr("src","assets/tomb/6.PNG");
         }else if (counting == 7) {
-          $("#ch-sc").attr("src","../../assets/tomb/7.png");
+          $("#ch-sc").attr("src","assets/tomb/7.PNG");
         }else if (counting == 8) {
-          $("#ch-sc").attr("src","../../assets/tomb/8.png");
+          $("#ch-sc").attr("src","assets/tomb/8.png");
         }
         });
         counting++
